@@ -11,6 +11,7 @@ M.ui = {
   hl_override = highlights.override,
   hl_add = highlights.add,
   transparency = true,
+  -- nvdash = {load_on_startup = true}
 }
 
 M.plugins = "custom.plugins"

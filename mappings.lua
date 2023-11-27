@@ -8,6 +8,8 @@ M.general = {
     ["<leader>gg"] = { "<cmd>LazyGit<CR>", "LazyGit" },
     ["<leader>ll"] = { "<cmd>TroubleToggle<CR>", "Open Trouble" },
     ["<leader>ft"] = { "<cmd>TodoTelescope<CR>", "Find Todo" },
+    -- ["<leader>fc"] = { function() require("telescope.builtin").grep_string() end, desc = "Find word under cursor" }
+    ["<leader>fc"] = { "<cmd> Telescope grep_string <CR>", "Find word under cursor" },
     ["|"] = { "<cmd>:vsplit <CR>", "Vertical split" },
     ["<F7>"] = {
       function()
@@ -88,7 +90,20 @@ M.general = {
     },
   },
 }
+M.disabled = {
+  n = {
+    -- ["gd"] = "",
+    -- ["gr"] = "",
+  },
+}
 
+
+M.lspoveride = {
+   n = {
+      ["gd"] = { "<cmd> Telescope lsp_definitions <CR>", "definitions" },
+      ["gr"] = { "<cmd> Telescope lsp_references <CR>", "references" },
+   },
+}
 -- more keybinds!
 
 return M
