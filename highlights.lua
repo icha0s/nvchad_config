@@ -21,6 +21,9 @@ M.override = {
     bg = "#461414",
     fg = "none",
   },
+  DiagnosticWarn = {
+    fg = "grey"
+  }
 }
 
 ---@type HLTable
