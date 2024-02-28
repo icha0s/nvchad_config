@@ -18,6 +18,12 @@ local sources = {
   b.formatting.black,
   b.formatting.isort,
 
+  -- xml
+  b.formatting.xmlformat,
+
+  -- json
+  b.formatting.jq,
+
 }
 
 null_ls.setup {
