@@ -23,7 +23,10 @@ M.override = {
   },
   DiagnosticWarn = {
     fg = "grey"
-  }
+  },
+  DiagnosticError = {
+    fg = "pink"
+  },
 }
 
 ---@type HLTable

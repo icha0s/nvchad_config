@@ -25,13 +25,19 @@ M.general = {
     ["<leader>gl"] = {":Flog<CR>", "Git Log",},
     ["<leader>gf"] = {":DiffviewFileHistory<CR>", "Git File History",},
     ["<leader>gc"] = {":DiffviewOpen HEAD~2<CR>", "Git Last Commit",},
-    ["<leader>gt"] = {":DiffviewToggleFile<CR>", "Git Last Commit",},
+    -- ["<leader>gt"] = {":DiffviewToggleFile<CR>", "Git Toggle File",},
 
 
     -- Rest NVIM
     ["<leader>rq"] = { "<Plug>RestNvim", "RestNvim" },
     ["<leader>rp"] = { "<Plug>RestNvimPreview", "RestNvimPreview",},
-    ["<leader>rr"] = { "<Plug>RestNvimPreview", "RestNvimPreview",},
+    ["<leader>rr"] = { "<Plug>RestNvimLast", "RestNvimLast",},
+
+    --tab close
+   ["<leader>tq"] = { ":tabclose", "Tab - close" },
+   ["<leader>tn"] = { ":tabnew", "Tab - new" },
+
+
   },
   v = {
     [">"] = { ">gv", "indent"},
