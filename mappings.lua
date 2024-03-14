@@ -34,8 +34,8 @@ M.general = {
     ["<leader>rr"] = { "<Plug>RestNvimLast", "RestNvimLast",},
 
     --tab close
-   ["<leader>tq"] = { ":tabclose", "Tab - close" },
-   ["<leader>tn"] = { ":tabnew", "Tab - new" },
+   ["<leader>tq"] = { ":tabclose<CR>", "Tab - close" },
+   ["<leader>tn"] = { ":tabnew<CR>", "Tab - new" },
 
 
   },
