@@ -6,6 +6,13 @@ local augroup = vim.api.nvim_create_augroup
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+--
+--
+autocmd("BufEnter", {
+  pattern = "*",
+  command = "set tw=0",
+})
+
 vim.opt.colorcolumn = "120"
 vim.opt.relativenumber = true
 -- highlight yanked text for 200ms using the "IncSearch" highlight group
